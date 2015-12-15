@@ -1,1 +1,0 @@
-# slack-macros-bookmarklet
