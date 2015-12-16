@@ -30,7 +30,8 @@ new SlackMacro(/\/frogonacci (\d+)/g, function(lines) {
     ];
 
     frogs.random = function() {
-      return this[Math.floor((Math.random()*this.length))];
+      var randomIndex = Math.floor(Math.random() * this.length);
+      return this[randomIndex];
     };
 
     return new Array(lines).fill(0).map(function(_, index) {
